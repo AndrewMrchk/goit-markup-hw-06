@@ -424,11 +424,11 @@
           </ul>
         </div>
         <div class="column-three">
-          <b class="subscribe">Подпишитесь на рассылку</b>
-          <div class="subscribe">
+          <b>Подпишитесь на рассылку</b>
+          <div class="subscribe-section">
             <div class="input">
               <input
-                class="input-text"
+                class="subscribe-input"
                 type="email"
                 placeholder=" Email"
                 name="#"
@@ -452,6 +452,42 @@
             <use href="./img/icon/sprite.svg#icon-btn-modal-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div role="group" class="form-field">
+          <form action="" class="js-speeaker-form">
+            <ul class="modal-list-input list">
+              <li>
+                <label for="name">Имя</label>
+                <input type="text" name="user-name" id="name" />
+              </li>
+              <li>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="user-telephone" id="tel" />
+              </li>
+              <li>
+                <label for="mail">Почта</label>
+                <input type="mail" name="user-email" id="mail" />
+              </li>
+              <li>
+                <label for="comments">Комментарий</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="modal-accept-checkbox">
+          <input type="checkbox" name="accept-terms" id="accept-terms" />
+          <label for="accept-terms"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a></label
+          >
+        </div>
+        <button class="send-form-btn">Отправить</button>
       </div>
     </div>
     <script>
