@@ -435,12 +435,12 @@
                 id="#"
               />
             </div>
-            <a class="accept" href="#">
+            <button type="submit" class="accept" href="#">
               <span>Подписаться</span>
               <svg class="send" width="24" height="24">
                 <use href="./img/icon/sprite.svg#send"></use>
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -452,9 +452,9 @@
             <use href="./img/icon/sprite.svg#icon-btn-modal-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div role="group" class="form-field">
-          <form action="" class="js-speeaker-form">
+        <h2 class="modal-title">Оставьте свои данные, мы Вам перезвоним</h2>
+        <div role="group" class="forms">
+          <form action="#" class="js-speeaker-form form-field">
             <ul class="modal-list-input list">
               <li>
                 <label for="name">Имя</label>
@@ -467,6 +467,9 @@
               <li>
                 <label for="mail">Почта</label>
                 <input type="mail" name="user-email" id="mail" />
+                <svg class="form-icon" width="16" height="15">
+                  <use href="./img/icon/sprite.svg#form-mail-icon"></use>
+                </svg>
               </li>
               <li>
                 <label for="comments">Комментарий</label>
@@ -479,30 +482,36 @@
                 ></textarea>
               </li>
             </ul>
+            <div class="accept-checkbox-wrapper">
+              <label class="accept-checkbox-label" for="accept-terms"
+                ><input
+                  class="accept-checkbox"
+                  type="checkbox"
+                  name="accept-terms"
+                  id="accept-terms"
+                />
+                <span class="accept-checkbox-custom"></span>Соглашаюсь с
+                рассылкой и принимаю
+                <a href="#">Условия договора</a>
+              </label>
+            </div>
+            <button type="submit" class="send-form-btn">Отправить</button>
           </form>
         </div>
-        <div class="modal-accept-checkbox">
-          <input type="checkbox" name="accept-terms" id="accept-terms" />
-          <label for="accept-terms"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="#">Условия договора</a></label
-          >
-        </div>
-        <button class="send-form-btn">Отправить</button>
       </div>
     </div>
     <script>
       const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
       };
 
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
 
       function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
+        refs.modal.classList.toggle('is-hidden');
       }
     </script>
   </body>

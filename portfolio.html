@@ -333,24 +333,26 @@
           </ul>
         </div>
         <div class="column-three">
-          <b class="subscribe">Подпишитесь на рассылку</b>
-          <div class="subscribe">
-            <div class="input">
-              <input
-                class="input-text"
-                type="email"
-                placeholder=" Email"
-                name="#"
-                id="#"
-              />
+          <b>Подпишитесь на рассылку</b>
+          <form action="">
+            <div class="subscribe-section">
+              <div class="input">
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  placeholder=" Email"
+                  name="email"
+                  id="#"
+                />
+              </div>
+              <button type="submit" class="accept" href="#">
+                <span>Подписаться</span>
+                <svg class="send" width="24" height="24">
+                  <use href="./img/icon/sprite.svg#send"></use>
+                </svg>
+              </button>
             </div>
-            <a class="accept" href="#">
-              <span>Подписаться</span>
-              <svg class="send" width="24" height="24">
-                <use href="./img/icon/sprite.svg#send"></use>
-              </svg>
-            </a>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
