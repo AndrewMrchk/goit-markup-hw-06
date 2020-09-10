@@ -224,10 +224,12 @@ h1 {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .order:hover,
 .order:focus {
   background-color: var(--white-text-color);
   color: var(--hover-logo-color);
+  cursor: pointer;
 }
 
 .advantages.container {
@@ -532,6 +534,7 @@ address .contacts-footer:last-child {
 
 .subscribe-input {
   margin-right: 12px;
+  padding-left: 12px;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -702,6 +705,7 @@ address .contacts-footer:last-child {
 
 .form-field textarea {
   min-height: 120px;
+  padding-left: 12px;
 }
 
 .form-field textarea,
@@ -732,7 +736,9 @@ address .contacts-footer:last-child {
 }
 
 .accept-checkbox-custom {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid;
   border-radius: 2px;
   height: 16px;
@@ -745,10 +751,12 @@ address .contacts-footer:last-child {
 .accept-checkbox:checked ~ .accept-checkbox-custom {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--hover-logo-color);
   background-image: url(../img/icon/modal/checked.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   background-origin: border-box;
   border-color: var(--hover-logo-color);
   transform: scale(1.2);
