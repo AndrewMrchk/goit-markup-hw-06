@@ -665,10 +665,8 @@ address .contacts-footer:last-child {
 .form-icon {
   display: block;
   position: absolute;
-  top: 32px;
+  top: 30px;
   left: 11px;
-  width: 18px;
-  height: 18px;
   fill: var(--link-title-color);
 }
 
@@ -686,11 +684,12 @@ address .contacts-footer:last-child {
 }
 
 .modal-list-input input:hover,
-.modal-list-input input:focus,
+.modal-list-input li:hover .form-icon,
 .modal-list-input textarea:hover,
 .modal-list-input textarea:focus {
   border-color: var(--hover-logo-color);
   cursor: pointer;
+  fill: var(--hover-logo-color);
 }
 
 /* .modal-list-input input:hover .form-icon {
