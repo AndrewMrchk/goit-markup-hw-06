@@ -664,9 +664,11 @@ address .contacts-footer:last-child {
 
 .form-icon {
   display: block;
-  position: absolute;
+  /* position: absolute; */
   top: 32px;
   left: 11px;
+  width: 18px;
+  height: 18px;
   fill: var(--link-title-color);
 }
 
