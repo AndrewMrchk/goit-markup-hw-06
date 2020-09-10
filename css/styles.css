@@ -668,6 +668,7 @@ address .contacts-footer:last-child {
   top: 30px;
   left: 11px;
   fill: var(--link-title-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-list-input input,
@@ -681,23 +682,26 @@ address .contacts-footer:last-child {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-list-input input:hover,
+.modal-list-input input:focus,
+.modal-list-input input:checked,
+.modal-list-input input:checked ~ .form-icon,
+.modal-list-input input:focus ~ .form-icon,
 .modal-list-input li:hover .form-icon,
 .modal-list-input textarea:hover,
-.modal-list-input textarea:focus {
+.modal-list-input textarea:focus,
+.modal-list-input textarea:checked {
+  outline-color: var(--hover-logo-color);
   border-color: var(--hover-logo-color);
   cursor: pointer;
   fill: var(--hover-logo-color);
 }
 
-/* .modal-list-input input:hover .form-icon {
-  fill: var(--hover-logo-color);
-} */
-
 .form-field textarea {
-  height: 120px;
+  min-height: 120px;
 }
 
 .form-field textarea,
